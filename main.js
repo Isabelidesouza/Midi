@@ -1,25 +1,78 @@
-//pom
+//tecla Pom
+/*function tocaSomPom () {
+  document.querySelector('#som_tecla_pom').play();
+}
+
+document.querySelector('.tecla_pom').onclick = tocaSomPom;
+
+//tecla clap
+function tocaSomClap () {
+  document.querySelector('#som_tecla_clap').play();
+}
+
+document.querySelector('.tecla_clap').onclick = tocaSomClap;
+
+//tecla tim
+function tocaSomTim () {
+  document.querySelector('#som_tecla_tim').play();
+}
+
+document.querySelector('.tecla_tim').onclick = tocaSomTim;
+
+//tecla puff
+function tocaSomPuff () {
+  document.querySelector('#som_tecla_puff').play();
+}
+
+document.querySelector('.tecla_puff').onclick = tocaSomPuff;
+
+//tecla splash
+function tocaSomSplash () {
+  document.querySelector('#som_tecla_splash').play();
+}
+
+document.querySelector('.tecla_splash').onclick = tocaSomSplash;
+
+//tecla toim
+function tocaSomToim () {
+  document.querySelector('#som_tecla_toim').play();
+}
+
+document.querySelector('.tecla_toim').onclick = tocaSomToim;
+
+//tecla psh
+function tocaSomPsh () {
+  document.querySelector('#som_tecla_psh').play();
+}
+
+document.querySelector('.tecla_psh').onclick = tocaSomPsh;
+
+//tecla tic
+function tocaSomTic () {
+  document.querySelector('#som_tecla_tic').play();
+}
+
+document.querySelector('.tecla_tic').onclick = tocaSomTic;
+
+//tecla tom
+function tocaSomTom () {
+  document.querySelector('#som_tecla_tom').play();
+}
+
+document.querySelector('.tecla_tom').onclick = tocaSomTom;
+*/
+
 function tocaSomPom () {
-    document.querySelector('#som_tecla_pom').play();
-  }
-  
+  document.querySelector('#som_tecla_pom').play();
+}
 
-  document.querySelector('.tecla_pom').onclick = tocaSomPom;
+/*criando referencia - (reduzindo referencia da linha)deve utilizar a palavra reserva-
+da const. A palavra const vem de “constante”, ou seja, algo que nunca muda.
+Então criar um nome para essa lista(para guardar a lista de botoes)
+Para armazenar um valor na referência criada, utilize o comando de atribuição =.
+Conclusão:a lista de elementos encontrada por meio do método de busca
+querySelectorAll será armazenada na referência listaDeTeclas.*/
 
-  //tecla clap
-function tocaSomclap () {
-    document.querySelector('#som_tecla_clap').play();
-  }
-  
+const listaDeTeclas = document.querySelectorAll('.tecla');
 
-  document.querySelector('.tecla_pom').onclick = tocaSomclap;
-
-  //tecla tim
-  function tocaSomtim () {
-    document.querySelector('#som_tecla_tim').play();
-  }
-  
-
-  document.querySelector('.tecla_tim').onclick = tocaSomtim;
-
-  
+listaDeTeclas[0].onclick = tocaSomPom;
